@@ -1,6 +1,5 @@
 $main-text-color: white;
 $main-bg-color: #ccc;
-
 $font-family: 'Times New Roman';
 
 body {
@@ -21,5 +20,15 @@ span.text {
 .block {
 	p {
 		color: green;
+		background: red;
+	}
+}
+
+.block2 {
+	p {
+		color: blue;
+	}
+	a {
+		background: yellow;
 	}
 }
