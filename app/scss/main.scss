@@ -1,4 +1,25 @@
+$main-text-color: white;
+$main-bg-color: #ccc;
+
+$font-family: 'Times New Roman';
+
 body {
-	background: blue;
-	margin: 20px;
+	background: $main-text-color;
+}
+
+p.txt {
+	color: $main-text-color;
+	font-family: $font-family, sans-serif;
+}
+
+span.text {
+	color: $main-text-color;
+	font-family: $font-family, serif;
+	font-weight: bold;
+}
+
+.block {
+	p {
+		color: green;
+	}
 }
