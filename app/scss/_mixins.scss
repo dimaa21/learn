@@ -1,20 +1,55 @@
-@mixin font($size, $fontWeight) {
-	font-size: $size;
-	color: $main-text-color;
-	font-weight: 500;
-	font-family: "Times", sans-serif;
+@mixin font($color, $size: 20px, $fontWeight: bold) {
+  font-size: $size;
+  color: $color;
+  font-weight: $fontWeight;
+  font-family: 'Times', sans-serif;
 }
 
-// Міксін,з необмеженою к-стю параметрів
-@mixin padd($padd...) {
-	padding: $padd;
+@mixin padd($bg, $padd...) {
+  background-color: $bg;
+  padding: $padd;
 }
 
-@mixin links($main-color, $hover, $active) {
-	a {
-		color: $main-color;
+@mixin links($main-color) {
+  a {
+    text-decoration: none;
+    color: $main-color;
 
-		&:hover {color: darken($main-text-color, 10%)}
-		&:active {color: $active;}
-	}
+    &:hover {color: darken($main-color, 10%)}
+    &:active {color: darken($main-color, 30%)}
+
+    @content;
+  }
+}
+
+@mixin blocks($blocks) {
+  height: 200px;
+  background-color: #333;
+  float: left;
+
+  @if($blocks > 5) {
+    width: (100% - 8%);
+    padding: 2%;
+    margin: 2%;
+  }
+  @elseif($blocks == 5) {
+    width: 50px;
+    padding: 20px;
+    margin: 20px;
+  }
+  @elseif($blocks == 4) {
+    width: 150px;
+    padding: 20px;
+    margin: 20px;
+  }
+  @elseif($blocks == 3) {
+    width: 10px;
+    padding: 20px;
+    margin: 20px;
+  }
+  @else {
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+  }
 }
