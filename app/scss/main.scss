@@ -1,48 +1,73 @@
-// Підключення файлу з змінними
 @import "vars";
 @import "extends";
 @import "mixins";
 
-// Розширення
-%block {
-	color: green;
-	background: silver;
-}
-
-body {
-	background: $main-text-color;
-	width: (60% - 10%);
-	@include links(black, red, green);
-}
-
-p.txt {
-	color: $main-text-color;
-	font-family: $font-family, sans-serif;
-}
-
-span.text {
-	color: $main-text-color;
-	font-family: $font-family, serif;
-	font-weight: bold;
-}
-
 .block {
-	p {
-		@include font(50px, light);
-		@extend %block;
-	}
+  @extend %block;
+  width: (300em / 5 - 10em);
+
+  margin-bottom: 20px;
+  > p {
+    color: white;
+
+    > a {
+      @include font(20px, bold, black);
+
+      &:hover {text-decoration: line-through;}
+    }
+
+    &::first-letter {color: $color-text}
+  }
+
+  &:hover {
+    background: green;
+  }
+
+  &::after {
+    content: 'Hi';
+  }
 }
 
+.block-2 {
+  @extend %block;
+  @include padd(#fcfcfc, 100px, 100px, 140px, 150px);
 
-// Вкладені стилі
-.block2 {
-	p {	
-		@include padd(20px, 30px, 40px, 100px);
-		@extend %block;
-	}
+  @include links(white) {
+    background: #333;
+
+    b {
+      color: red;
+    }
+
+    &:visited {color: green}
+  }
 }
 
-a {
-	@include font(50px, light);
-	@extend %block;
+@include links(red);
+
+.btn-red {
+  @extend %btn;
+  @include font($color: white, $size: 24px, $fontWeight: light);
+  background-color: red;
+}
+
+.btn-green {
+  @extend %btn;
+  background-color: green;
+}
+
+#main-block {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+
+  > div {
+    @include blocks(5);
+  }
+}
+
+@for $el from 4 to 9 {
+  .#{$some-class}-#{$el} {
+    padding: (20px + $el) * 2;
+  }
 }
