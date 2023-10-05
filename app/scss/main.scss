@@ -1,9 +1,18 @@
-$main-text-color: white;
-$main-bg-color: #ccc;
-$font-family: 'Times New Roman';
+// Підключення файлу з змінними
+@import "vars";
+@import "extends";
+@import "mixins";
+
+// Розширення
+%block {
+	color: green;
+	background: silver;
+}
 
 body {
 	background: $main-text-color;
+	width: (60% - 10%);
+	@include links(black, red, green);
 }
 
 p.txt {
@@ -19,16 +28,21 @@ span.text {
 
 .block {
 	p {
-		color: green;
-		background: red;
+		@include font(50px, light);
+		@extend %block;
 	}
 }
 
+
+// Вкладені стилі
 .block2 {
-	p {
-		color: blue;
+	p {	
+		@include padd(20px, 30px, 40px, 100px);
+		@extend %block;
 	}
-	a {
-		background: yellow;
-	}
+}
+
+a {
+	@include font(50px, light);
+	@extend %block;
 }
