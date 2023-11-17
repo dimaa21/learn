@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+@import "mixins";
+@import "vars";
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+html, body {height: 100%}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 100%;
+  @include gradient(45deg, #b08a90, #b9d8e4);
+  min-height: 100%;
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+.block {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  border-radius: 4px;
+  padding: 50px 0;
+
+  .img-holder {
+    @include gradient(90deg, #b3aab9, #bad2df);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 23px;
+    color: $main-text-color;
+  }
+
+  p {
+    color: darken($main-text-color, 10%);
+    margin-top: 20px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 50px;
+
+    div {
+      border: 1px solid $social-color;
+      border-radius: 50%;
+      font-size: 20px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      transition: all 1s ease;
+      color: $social-color;
+
+      &.linkedin {
+        &:hover {
+          @include social-hover(#207ce5, #fff);
+        }
+      }
+
+       &.github {
+        &:hover {
+          @include social-hover(#131313, #fff);
+        }
+      }
+
+       &.telegram {
+        &:hover {
+          @include social-hover(#49a5bf, #fff);
+        }
+      }
+
+    }
+  }
+}
+
+.bottom-text {
+  text-align: center;
+  color: #c8c2c8;
+  margin-top: 100px;
+}

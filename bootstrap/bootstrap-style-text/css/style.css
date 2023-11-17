@@ -1,0 +1,12 @@
+.border {
+  border: 1px solid silver;
+}
+
+.txt {
+  width: 50px;
+  background: red;
+}
+
+.block-image {
+  width: 100px;
+}

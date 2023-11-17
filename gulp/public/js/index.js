@@ -1,0 +1,1 @@
+function some(){return 2}

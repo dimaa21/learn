@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+	background: red;
+}
+
+.main {
+	background-color: red!important;
+}
+
+.navbar-toggler {
+	outline: none!important;
+}
+
+.navbar-toggler {
+	background: #f8f9fa!important;
+}
+
+p {
+	top: 10px;
+	background: red;
+	padding: 10px;
+	transition: all 6s ease;
+}

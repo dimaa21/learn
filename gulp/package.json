@@ -1,0 +1,26 @@
+{
+  "name": "example-app",
+  "version": "1.0.0",
+  "description": "gulp course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dmytro Haborak",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-dest": "^0.2.3",
+    "gulp-uglify": "^3.0.2",
+    "readable-stream": "^4.4.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "bootstrap4-min-css": "^1.0.1",
+    "browser-sync": "^2.29.3",
+    "pipeline": "^0.1.3"
+  }
+}

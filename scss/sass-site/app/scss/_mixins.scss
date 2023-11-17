@@ -1,0 +1,12 @@
+@mixin gradient($direction, $fromColor, $endColor) {
+	background: $fromColor;
+	background: linear-gradient($direction, $fromColor, $endColor);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$fromColor}', endColorstr='#{$endColor}', GradientType=1);
+}
+
+@mixin social-hover($bg, $color) {
+	background: $bg;
+	color: $color;
+	transform: translateY(-15px);
+	border-color: $bg;
+}
