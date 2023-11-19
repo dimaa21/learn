@@ -15,7 +15,7 @@ Set up tasks for compiling Sass, minifying CSS and JavaScript, and optimizing im
 <br>
 - **JavaScript** : Strengthened my understanding of JavaScript, focusing on both vanilla JS and its integration with other technologies. Implemented interactive and dynamic features to enhance the user experience.
 
-ʼ\nʼ - **PHP** : Learn the PHP programming language with a focus on basic concepts, including working with variables, operators, and conditional statements.
+\n - **PHP** : Learn the PHP programming language with a focus on basic concepts, including working with variables, operators, and conditional statements.
 
 
 
