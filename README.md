@@ -12,7 +12,7 @@ Created sleek and modern user interfaces with Bootstrap's grid system, component
 Set up tasks for compiling Sass, minifying CSS and JavaScript, and optimizing images.
 - **JavaScript** : Strengthened my understanding of JavaScript, focusing on both vanilla JS and its integration with other technologies.
 Implemented interactive and dynamic features to enhance the user experience.
-
+-**PHP** : Learn the PHP programming language with a focus on basic concepts, including working with variables, operators, and conditional statements.
 
 
 
