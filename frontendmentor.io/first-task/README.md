@@ -23,4 +23,4 @@ Thanks for being a PRO member. We hope you enjoy the challenge! 🙂
 
 
 ** ⚠️ Result ⚠️ : 
-<img class="qr-code" src="/frontendmentor.io/first-task/img/result" alt="">
+<img class="qr-code" src="/frontendmentor.io/first-task/img/result.png" alt="">
