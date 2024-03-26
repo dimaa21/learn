@@ -3,4 +3,40 @@
 
 * {
     background-color: #D4E1EE;
+    margin: 0;
+    padding: 0;
+}
+
+.main-block {
+    height: 497px;
+    width: 320px;
+    background-color: white;
+    text-align: center;
+    margin: 250px auto;
+    border-radius: 30px;
+}
+
+.main-block .qr-code {
+    height: 288px;
+    width: 288px;
+    margin-top: 15px;
+    border-radius: 30px;
+}
+
+.main-block .main-text {
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1E314F;
+    background-color: white;
+    margin: 0 20px;
+}
+
+.main-block .second-text {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 400;
+    color: #7C889E;
+    background-color: white;
+    margin: 0 30px;
 }
