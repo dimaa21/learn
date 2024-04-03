@@ -1,0 +1,32 @@
+#block :first-child {
+    color: red;
+}
+
+.block-2 p:not(:empty) {color: brown}
+
+.block-2 p:only-of-type {color: blue}
+
+a:link {text-decoration: none;}
+a:visited {color: greenyellow;}
+a:active {text-decoration: line-through;}
+a:hover {color: aqua; font-weight: bold} 
+
+.block-txt span {color: blue}
+.block-txt:hover span {color: red}
+.block-txt span:active {color: greenyellow}
+
+span:not(.txt) {color: white;}
+span:not(.txt):hover {color: red;}
+
+
+p:empty {
+    background-color: black;
+    height: 10px;
+}
+
+input:focus {background-color: blue;}
+input[type]:not([type="text"]) {background-color: red;}
+
+body :first-child::first-letter {
+    background-color: olive;
+}
