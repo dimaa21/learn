@@ -1,0 +1,43 @@
+p {
+    /* Колір тексту */
+    color: rgb(62, 37, 120);
+
+    /* Жирність тексту */
+    font-weight: bolder;
+
+    /* Cтиль тексту */ 
+    font-style: italic;
+
+    /* Розмір тексту */ 
+    font-size: 14px;
+
+    /* Назва шрифту */ 
+    font-family: 'Times New Roman', Times, seris, sans-serif;
+
+    /* Курсор при наведенні на обʼєкт */
+    cursor: revert-layer;
+
+    /* Задній фон */ 
+    background: rgba(255, 0, 0, 0.5);
+
+    /* Відстань між символами */ 
+    letter-spacing: 2px;
+
+    /* Міжрядковий інтервал */
+    line-height: 200%;
+
+    /* Розташування тексту */ 
+    text-align: left;
+
+    /* Підкреслення тексту */
+    text-decoration: underline;
+
+    /* Колір підкрселення тексту */ 
+    text-decoration-color: #ddd;
+
+    /* Робить тексту з великої букви або малої */ 
+    text-transform: uppercase;
+
+    /* Відстань між словами */ 
+    word-spacing: 10px;
+}
