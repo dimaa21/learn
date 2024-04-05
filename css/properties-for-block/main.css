@@ -25,5 +25,10 @@
     padding: 25px;
 
     /* Скрол контенту в об’єкті, якщо він не поміщається */ 
-    overflow: scroll;
+    overflow: hidden;
+}
+
+textarea {
+    max-width: 400px;
+    opacity: 0;
 }
