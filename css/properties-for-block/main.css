@@ -26,9 +26,24 @@
 
     /* Скрол контенту в об’єкті, якщо він не поміщається */ 
     overflow: hidden;
+
+    /* Властивість display - тип відображання елементу */ 
+    /* display: none; - Приховує обʼєкт */
+    /* display: block; -  обʼєкт стає блочним */ 
+    display: inline-block; /* об'єкт стає блочним, але розміщується в ряд */ 
+    /* display: inline; -  об'єкт стає рядковим */  
 }
 
 textarea {
     max-width: 400px;
     opacity: 0;
+}
+
+.img {
+    width: 100%;
+    height: 200px;
+    background-image: url(/css/properties-for-block/img/img.jpeg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 1000px;
 }
