@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 2000px;
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+#first {
+    width: 400px;
+    background-color: #333;
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+#first img {
+    width: 200px;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    position: absolute;
+}
+
+#first p {
+    clear: none;
+}
+
+#second {
+    position: sticky;
+
+    top: 50px;
+}
+
+/* Властивість float  - позиціонує об’єкт з заданою стороною
+
+float: left;
+
+Властивість clear - забирає обтікання
+
+сlear:both;
+
+Властивість position
+
+position: relative; - блоки має звичайне позиціонування, але його має коригувати за допомогою: top, right, bottom, left
+
+position: fixed; - фіксує об’єкт в звичайній точці екрану 
+
+position: absolute; - те саме, що fixed, але не закріпляє блок в певній точці екрану 
+
+position: sticky; - position: absolute; + position: fixed;  */
