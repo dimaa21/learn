@@ -1,0 +1,23 @@
+ul {
+    /* Властивість list-style дозволяє встановити всі властивості для списку  */
+
+    list-style: decimal;
+}
+
+ul li {
+    display: inline-block;
+    background-color: whitesmoke;
+    margin-right: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: #333;
+    color: #fff;
+    -webkit-box-shadow: -16px 7px 108px -31px rgba(0,0,0,0.75);
+    -moz-box-shadow: -16px 7px 108px -31px rgba(0,0,0,0.75);
+    box-shadow: -16px 7px 108px -31px rgba(0,0,0,0.75);
+}
