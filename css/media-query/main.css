@@ -1,0 +1,21 @@
+body {
+    background-color: aqua;
+}
+
+/* Коли ширина екрана 320px, задній фон стає червоним */
+
+@media(max-width: 320px) {
+    body {
+        background: red;
+    }
+}
+
+/* Коли ширина екрана від 700px до 1000px, задній фон стає чорним */
+
+@media(min-width: 700px) {
+    body {
+        background: black;
+    }
+}
+
+
