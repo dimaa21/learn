@@ -1,0 +1,37 @@
+#block {
+    width: 100px;
+    height: 100px;
+    background: silver;
+
+    /* Підключення анімації */
+    animation-name: Animation;
+
+    /* Вказуємо тривалість анімації */ 
+    animation-duration: 7s;
+
+    /* Вказуємо через який час, анімація почне програватись */ 
+    animation-delay: 0.2s;
+
+    /* Робимо анімацію безкінчечною */ 
+    animation-iteration-count: infinite;
+
+    /* Робимо анімацію плавною, з одного кольору в інший */ 
+    animation-direction: alternate;
+}
+
+/* Створення анімації */
+
+@keyframes Animation {
+    0% {border-radius: 0px}
+    10% {border-radius: 10px}
+    40% {border-radius: 50px}
+    70% {border-radius: 100px}
+    100% {border-radius: 3px}
+}
+
+/* Створення анімації */
+
+@keyframes block {
+    from {background: silver}
+    to {background: red}
+}
