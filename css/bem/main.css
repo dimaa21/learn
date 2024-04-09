@@ -1,0 +1,15 @@
+:root {
+    --main-color: grey;
+}
+
+.menu__link {
+    color: red;
+}
+
+.menu__link--active {
+    color: var(--main-color);
+}
+
+.menu__link--deactive {
+    color: aquamarine;
+}
