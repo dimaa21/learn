@@ -1,0 +1,37 @@
+.container {
+    /* Для батьківського елементу вказуємо,
+            display: flex;
+     після цього об’єкти,
+      які всередині стають в ряд */ 
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+.container > div {
+    padding: 10px;
+    border: 1px solid silver;
+    margin-bottom: 10px;
+    flex-basis: 30%;
+}
+
+.box-1 {
+    /* Замість width вказуємо flex-basis: 500px; */
+    /* flex-basis: 100px; */
+
+    /* Властиівість flex задає пропорцію між блоками */ 
+    flex: 1;
+    order: 2;
+}
+
+.box-2 {
+    flex: 2;
+    order: 3;
+}
+
+.box-3 {
+    flex: 3;
+    order: 1;
+}
