@@ -4,10 +4,15 @@
      після цього об’єкти,
       які всередині стають в ряд */ 
     display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-around;
-    /* flex-direction: column; */
-    align-items: center;
+
+    /* Переносить елемент на новий рядок */
+    flex-wrap: wrap;
+
+    /* вирівнює елементи по заданій властивості */
+    justify-content: center;
+
+    /* тип розміщення елементів, горизонтально або вертикально */
+    flex-direction: column;
 }
 
 .container > div {
@@ -15,6 +20,9 @@
     border: 1px solid silver;
     margin-bottom: 10px;
     flex-basis: 30%;
+
+    /* вирівнює елементи по поперечній осі */
+    align-items: stretch;
 }
 
 .box-1 {
@@ -23,6 +31,8 @@
 
     /* Властиівість flex задає пропорцію між блоками */ 
     flex: 1;
+
+    /* order дозволяє сортувати елементи по порядку */
     order: 2;
 }
 
