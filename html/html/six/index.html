@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Зображення / Цитати
+
+    Зображення
+
+    В alt можна вказати альтернативний підпис,
+    який буде відображатись в разі 
+    якщо фото не загрузиться
+
+    wigth i height - ширина і висота фото
+    -->
+
+    <!-- 
+    Атрибут loading=lazy для оптимальної 
+    загрузки фото 
+    -->
+    <img src="/html/html-fouth-part/img/html-logo.png" 
+    alt="Цей підпис показується вам, якщо
+    фото не загрузилось" width="250"
+    height="250"
+    loading="lazy">
+
+    <!-- Абсолютний шлях - вказує повне місцезнаходження файлу
+     в Інтернеті або на вашому комп'ютері, 
+     починається з кореневого каталогу 
+     або URL-адреси. -->
+
+    <img src="https://example.com/images/photo.jpg" alt="Example Image">
+
+    <!-- Відносний шлях вказує місцезнаходження файлу
+    відносно поточного документа або кореневого каталогу
+    веб-сайту. -->
+
+    <img src="images/photo.jpg" alt="Example Image">
+    
+    <!-- Цитати -->
+    
+    <!--
+    blockquote - тег цитати
+    cite - тег джерела цитати 
+    -->
+
+    <blockquote>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </blockquote>
+
+    <p>Name author <cite>Source</cite></p>
+
+    <!-- q - можна малу цитату -->
+
+    <p>quote <q cite="...">Small quote</q></p>
+
+    <!-- Медіаконтент HTML -->
+
+    <!-- Тег video Для відображення відео на сторінці
+     
+    атрибут width �� height - ширина �� висота відео
+
+    атрибут muted додає звук відео до початку
+
+    атрибут loop додає повторення відео
+    
+    атрибут controls для керуванням плеєром відео
+
+    атрибут autoplay додає автопрогравання відео
+    при відкритті сторінки
+
+    атрибут poster показує фото, якщо відео не підгрузилось
+    -->
+
+    <video src="pop.mp4" poster="img.jpeg" autoplay controls width="300" height="300"></video>
+
+    <!-- Тег audio Для відображення аудіо на сторінці -->
+
+    <p>
+        <audio src="audio.mp3" controls>
+            Your browser does not support the audio element.
+        </audio>
+    </p>
+
+    <!-- контент з іншого сайту на сторінку -->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-ce54cac2-b67f-4ffd-96be-4df943ef88dc" data-elfsight-app-lazy></div>
+
+        <!-- Тег iframe дозволяє вивести з певним функціоналом -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6PL2TqBdz0I?si=395WtFZBFyL3tzUp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>
