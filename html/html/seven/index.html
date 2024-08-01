@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        /* CSS для таблиці */
+        table {
+            width: 20%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+    <body>
+        <!-- НTML таблиці - теги table, tr, td, th-->
+
+        <!-- тег table - огортає в себе всю таблицю -->
+        <table>
+
+            <!-- caprion - вказує загальну назву для таблицю -->
+            <caption>Table number one</caption>
+            <!-- tr - рядок таблиці -->
+
+            <!-- thead заголовок -->
+            <thead>
+                <th>Headline one</th>
+                <th>Headline two</th>
+            </thead>    
+
+            <!-- tbody - Виділяє основну частину таблиці -->
+            <tbody>
+                <tr>
+                    <!-- th - заголовок рядка таблиці -->
+                    <!-- td - ячейка таблиці -->
+                    <th>Cell 1</th>
+                    <th>Cell 2</th>
+                </tr>
+                <tr>
+                    <!-- th - заголовок рядка таблиці -->
+                    <!-- td - ячейка таблиці -->
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                </tr>
+            </tbody>
+
+            <!-- tfoot - виділяє нижню частину таблиці -->
+            <tfoot>
+                <tr>
+                    <td>Fotter table</td>
+                    <td>Fotter table</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- HTML Форми -->
+
+        <!-- form - основний тег форми -->
+         <!-- action - адреса, на яку буде перенаправлено дані форми -->
+        <!-- method - спосіб передачі даних (GET/POST) -->
+        <form action="">
+            <!-- fieldset - для групування декількох полів вводу -->
+            <!-- legend - заголовок для fieldset -->
+            <!-- label - підпис до елемента таблиці -->
+            <!-- input - Поле вводу-->
+            <fieldset>
+                <legend>Поле 1</legend>
+                <label for="login">Login: </label>
+                <!-- Атрибут name потрібен для передачі данних на сервер -->
+                <!-- Атрибут value - додасть текст в поле до вводу -->
+                <!-- Атрибут type визначає тип поля -->
+                <input type="text" id="login" name="user-login" value="Введіть ваш логін">
+            </fieldset>
+                
+            <fieldset>
+                <legend>Поле 2</legend>
+                <label for="password">Password</label>
+                <!--  input - type email для вводу електронної пошти -->
+                <!-- input - type url для вводу посилання -->
+                <input type="email">
+            </fieldset>
+                
+            <fieldset>
+                <legend>Поле 3</legend>
+                <label for="email">Email</label>
+            </fieldset>
+        </form>
+
+
+
+    </body>
+</html>
