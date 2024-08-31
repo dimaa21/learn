@@ -7,15 +7,16 @@
 </head>
 <body>
     <!-- Форми в HTML. Теги textarea, select, option, optgroup -->
-    <!-- Тег textarea - вводить багаторядкий рядок для вводу данних -->
-    <label for="">Your comment</label>
-    <textarea name="user-comment" id="comment"></textarea> <br><br>
 
     <!-- Випадаючий список, для вибору одного або декількох варіантів -->
     <!-- Тег option для варіантів відповіді, обов'язковий атрибут value, для того щоб сервер розпізнав, що вибрав користувач --> 
     <!-- Атрибут Selected - для того, щоб цей варіант був вибраний за замовчуванням -->
     <!-- Атрибут disabled - для варіанту, який не можна вибрати -->
     <form action="">
+        <p style="font-weight: 600;">Form #1</p>
+        <!-- Тег textarea - вводить багаторядкий рядок для вводу данних -->
+        <label for="">Your comment</label>
+        <textarea name="user-comment" id="comment"></textarea> <br><br>
         <label for="city">Your favourite language:</label>
         <select name="user-programming-language" id="language" required>
             <option disabled value="" selected>Not selected</option>
@@ -43,6 +44,108 @@
             <option value="Emacs">Emacs</option>
         </optgroup>
     </select>
+
+    <!-- Атрибути required, disabled, readonly, placeholder, input, type, autocomplete -->
+    
+    <!--  Атрибут required робить поле форми обов'язковим для заповнення -->
+    <!-- Атрибут disabled робить елемент не активним -->
+    <form action="">
+        <p style="font-weight: 600;">Form #2</p>
+        <p>
+            <label for="login">Login</label>
+            <input id="login" name="user-login" required disabled>
+        </p>
+
+        <!-- Атрибут readonly, робить елемент недоступним для редагування -->
+        <!-- Атрибут placeholder - підсказка для поля вводу -->
+        <p>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="user-password" readonly required placeholder="Enter your password">
+        </p>
+
+        <button type="submit">Send</button>
+
+    </form> 
+
+    <!-- Тег inputmode - Типи клавіатури для полей вводу на мобільних телефонах -->
+    <p style="color: brown; font-size: 20px;"> Form #3 </p>
+    <p style="font-size: 25px;">Mobile keyboard</p>
+    <p>
+        <label for="field-1">Екранна клавіатура з цифрами</label>
+        <input id="field-1" name="field-1" inputmode="numeric">
+    </p>
+
+    <p>
+        <label for="field-2">Екранна клавіатура не появиться взагалі</label>
+        <input id="field-2" name="field-2" inputmode="none">
+    </p>
+
+    <p>
+        <label for="field-3">Екранна клавіатура з цифрами і розділюючими</label>
+        <input id="field-3" name="field-3" inputmode="decimal">
+    </p>
+
+    <p>
+        <label for="field-4">Екранна клавіатура для вводу номеру телефону</label>
+        <input id="field-4" name="field-4" inputmode="tel">
+    </p>
+
+    <p>
+        <label for="field-5">Екранна клавіатура для вводу пошти</label>
+        <input id="field-5" name="field-5" inputmode="email">
+    </p>
+
+    <p>
+        <label for="field-6">Екранна клавіатура з кнопкою пошуку</label>
+        <input id="field-6" name="field-6" inputmode="search">
+    </p>
+
+    <p>
+        <label for="field-7">Екранна клавіатура для вводу url</label>
+        <input id="field-7" name="field-7" inputmode="url">
+    </p>
+
+    <!-- Як браузер пропонує користувачу, що потрібно ввести -->
+    <!-- Все залежить від параметру name --> 
+    <p style="font-weight: 700; font-size: 25px;"> Form #4</p>
+
+    <p>
+        <label for="name">Name</label>
+        <input id="name" name="name">
+    </p>
+
+    <p>
+        <label for="email">Email</label>
+        <input id="email" name="email">
+    </p>
+
+    <p>
+        <label for="currentpassword">Current password:</label>
+        <input id="currentpassword" name="currentpassword">
+    </p>
+
+    <p>
+        <label for="newpassword">New password:</label>
+        <input id="newpassword" name="newpassword">
+    </p>
+
+    <p>
+        <label for="postal-code">Postal Code</label>
+        <input id="postal-code" name="postal-code">
+    </p>
+
+    <p>
+        <label for="phone-number">Phone Number</label>
+        <input id="phone-number" name="phone-number">
+    </p>
+    <!-- Атрибут autofocus - виділяє елемент -->
+    <button autofocus>Send</button>
+
+    <!-- Атрибут maxwidth i minlength -->
+     <p>
+        <label for="textarea">Textarea</label>
+        <input id="textarea" minlength="10" maxwidth="100">
+    </p>
 
 </body>
 </html>
