@@ -7,6 +7,42 @@
 </head>
 <body>
     <!-- Форми в HTML. Теги textarea, select, option, optgroup -->
-    
+    <!-- Тег textarea - вводить багаторядкий рядок для вводу данних -->
+    <label for="">Your comment</label>
+    <textarea name="user-comment" id="comment"></textarea> <br><br>
+
+    <!-- Випадаючий список, для вибору одного або декількох варіантів -->
+    <!-- Тег option для варіантів відповіді, обов'язковий атрибут value, для того щоб сервер розпізнав, що вибрав користувач --> 
+    <!-- Атрибут Selected - для того, щоб цей варіант був вибраний за замовчуванням -->
+    <!-- Атрибут disabled - для варіанту, який не можна вибрати -->
+    <form action="">
+        <label for="city">Your favourite language:</label>
+        <select name="user-programming-language" id="language" required>
+            <option disabled value="" selected>Not selected</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="C++">C++</option>
+        </select>
+        <button>Send</button>
+    </form> <br>
+
+    <!--  Тег optgroup - використовується для візуального групування декільких тегів option -->
+    <label for="code-editor">Your favourite code editor</label>
+    <select name="code-editor" id="code-editor">
+        <optgroup label="IDE">
+            <option value="WebStorm">WebStorm</option>
+            <option value="PhpStorm">PhpStorm</option>
+            <option value="Visual Studio Code">Visual Studio Code</option>
+        </optgroup>
+
+        <optgroup label="Editor code">
+            <option value="Sublime Text">Sublime Text</option>
+            <option value="Atom">Atom</option>
+            <option value="Vim">Vim</option>
+            <option value="Emacs">Emacs</option>
+        </optgroup>
+    </select>
+
 </body>
 </html>
