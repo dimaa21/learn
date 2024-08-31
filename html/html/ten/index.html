@@ -3,16 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML векторна графіка, тег svg</title>
+    <title>
+        HTML векторна графіка, тег svg
+        Глобальні атрибути HTML, class, id, title, hidden, tabindex, lang /  Коментарі в розмітці 
+    </title>
 </head>
 <body>
 
     <!-- HTML векторна графіка, тег svg -->
+    <!-- Тег svg - векторна форма в HTML --> 
     <!-- За допомогою svg формату має редагувати фото в HTML -->
+
     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
         <svg width="400px" height="400px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 15V10.5C1 5.25329 5.25329 1 10.5 1H15V5.5C15 10.7467 10.7467 15 5.5 15H1ZM8.79289 5.20711L10.7929 7.20711L12.2071 5.79289L10.2071 3.79289L8.79289 5.20711ZM6.29289 7.70711L8.29289 9.70711L9.70711 8.29289L7.70711 6.29289L6.29289 7.70711ZM3.79289 10.2071L5.79289 12.2071L7.20711 10.7929L5.20711 8.79289L3.79289 10.2071Z" fill="#000000"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 15V10.5C1 5.25329 5.25329 1 10.5 1H15V5.5C15 10.7467 10.7467 15 5.5 15H1ZM8.79289 5.20711L10.7929 7.20711L12.2071 5.79289L10.2071 3.79289L8.79289 5.20711ZM6.29289 7.70711L8.29289 9.70711L9.70711 8.29289L7.70711 6.29289L6.29289 7.70711ZM3.79289 10.2071L5.79289 12.2071L7.20711 10.7929L5.20711 8.79289L3.79289 10.2071Z" fill="#0000FF"/>
     </svg>
 
+    <!-- Глобальні атрибути HTML, class, id, title, hidden, tabindex, lang /  Коментарі в розмітці -->
+    <!-- Атрибути, які можна застосовувати до будь-якого HTML тегу -->
+
+    <!-- Атрибут class, селектор для CSS і JS  -->
+    <p class="header-one">1</p>
+
+    <!-- Атрибут id, селектор для CSS i JS
+     Атрибут id повинен бути унікальним в HTML документа -->
+
+    <!-- Атрибут title, додає підказку, коли користувач наводить на елемент -->
+     <a href="https://example.com" title="Перейти на сайт">Перейти на сайт</a>
+
+    <!-- Атрибут hidden, відображає елемент, але не дає ��ому доступу до сторінки -->
+    <p hidden>Текст, який не відображається</p>
+
+    <!-- Атрибут tabindex, перебір елементів через tab -->
+     <button>Button 1</button>
+     <button>Button 2</button>
+     <button>Button 3</button>
+     <p tabindex="0"> Параграф 1</p>
+     <p tabindex="0"> Параграф 2</p>
+     <p tabindex="0"> Параграф 3</p>
+
+    <!-- Атрибут lang - вказує браузеру мову вмістимості на сторінці -->
+    <p lang="en"> I love Front End layout!</p>
+
+    <!-- Атрибут contenteditable - робить будь який елемент редагуючим -->
+    <p contenteditable="true">One</p>
+
+    <!-- Атрибут style - дозволяє додавати стилі до HTML розмітки -->
+    <p style="color: aqua;">Текст, з кольором</p>
+
+    <!-- Атрибут data використовується для зчитування JS даних-->
+    <input data-mask="phone" data-region="ru" />
+
+    <!-- Коментарі в розмітці -->
+
+    
 </body>
 </html>
