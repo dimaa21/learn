@@ -1,0 +1,59 @@
+/* Універсальний селектор */
+/* Застосовується до всього, що на сторінці */
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*  Cелектор по тегу */ 
+p {
+    font-weight: 700;
+}
+
+/* Селектор по класу */
+.link {
+    color: purple;
+    text-decoration: none;
+}
+
+/* Селектор по ідентифікатору */ 
+#main {
+    font-size: 30px;
+}
+
+/* Селектор по атрибуту */
+[type="text"] {
+    box-shadow: 5px 5px 3px 4px #5c7ccd;
+}
+
+/*  Селектор [attr*=value] по атрибуту */
+[href*="google.com"] {
+    padding-left: 1em;
+    background: url(google-logo.png) 0 50%/1em no-repeat;
+}
+
+/* Селектор [attr^=value] по атрибуту */ 
+/* Шукає значення, які починаються з http:// */ 
+[href^="http://"] {
+    color: #5c7ccd;
+}
+
+/* Cелектор [attr$=value] по атрибуту */ 
+/* Шукає значення, які закінчуються на .com */ 
+[href$=".com"] {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Cелектор [attr~=value] по атрибуту */ 
+/* Шукає значення, які закінчуються на .com */ 
+[alt~="cat"] {
+    border: 10px dashed forestgreen;
+}
+
+/* Cелектор [attr|=value] по атрибуту */ 
+/* Шукає значення, які містять warning або починаться з warning */
+[class|="warning"] {
+    color: orange;
+}
+
+
