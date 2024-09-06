@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#2. Guide to CSS selectors, calculation of specificity in CSS. Priority and weight of styles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- #2. Guide to CSS selectors, calculation of specificity in CSS. Priority and weight of styles -->
+
+    <p>Параграф з текстом</p>
+    <p>Параграф з текстом</p>
+    <p>Параграф з текстом</p>
+
+    <!-- Класів може бути застосовано багато до одного тегу-->
+    <p><a class="link my-link" href="">Link</a></p>
+
+    <!-- Ідентифікатор повинен один/унікальний-->
+    <p id="main">Main Content</p>
+
+    <p>
+        <input type="text"
+        placeholder="input text">
+    </p>
+
+    <p>
+        Enter to our site
+        <a href="http://google.com">Google</a>
+    </p>
+
+    <img alt="cat" src="./google-logo.png" />
+
+    <p class="warning">Параграф з текстом</p>
+
+</body>
+</html>
