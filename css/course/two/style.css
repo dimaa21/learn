@@ -1,7 +1,7 @@
 /* Універсальний селектор */
 /* Застосовується до всього, що на сторінці */
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*  Cелектор по тегу */ 
@@ -56,4 +56,55 @@ p {
     color: orange;
 }
 
+/*  Селектор потомка */
+section p span {
+    color: aqua;
+}
 
+/* Групування селекторів */
+h1,
+h2,
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.button {
+    background-color: grey;
+}
+
+/* Обʼєднання селекторів */ 
+.button.is-active {
+    background-color: coral;
+}
+
+/* Селектор прямих дочірних елементів */
+p > span {
+    font-size: 25px;
+}
+
+/* Суміжний селектор */
+/* Вибирає тільки один тег, який йде наступним, що знаходяться на одному рівні */ 
+p + span {
+    color: #5c7ccd;
+}
+
+/* Суміжний селектор */ 
+/*  Вибирає всі теги, що йдуть наступними, знаходяться на одному рівні */ 
+span ~ p {
+    color: #5c7ccd;
+}
+
+/* Cпецифічність селектор */ 
+/* Застосується той тег, який прописаний нижче */ 
+p {
+    color: red;
+    color: blue;
+}
+
+/* Вага кожному селектор */ 
+/* 1.  #id */
+/* 2. .class */ 
+/* 3. [attr^=value] */
+/* 4. button:disabled */
+/* 5. p {} */
+/* 6. p::before */ 
