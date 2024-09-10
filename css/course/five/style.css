@@ -1,0 +1,8 @@
+/* Скидання стилів в нуль */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+}
