@@ -1,0 +1,63 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+/* Padding - внутрішній відступ */ 
+
+.box-1 {
+    padding: 30px;
+    background-color: aquamarine;
+}
+
+.box-2 {
+    padding: 10px 50px;
+    background-color: blueviolet;
+}
+
+.box-3 {
+    padding: 50px 100px 150px;
+    background-color: violet;
+}
+
+.box-3 {
+    padding: 50px 100px 150px 200px;
+    background-color: lightgray;
+}
+
+.box-4 {
+    padding-top: 60px;
+    background-color: forestgreen;
+}
+
+.box-5 {
+    padding-top: 50px;
+    background-color: wheat;
+}
+
+/*  Margin - зовнішні відступи */ 
+
+.box-6 {
+    margin: 30px;
+    background-color: aquamarine;
+}
+
+.box-7 {
+    margin: 10px 50px;
+    background-color: blueviolet;
+}
+
+.box-8 {
+    margin: 50px 100px 150px;
+    background-color: violet;
+}
+
+.box-9 {
+    margin: 50px 100px 150px 200px;
+    background-color: lightgray;
+}
+
+.box-10 {
+    margin-top: 60px;
+    background-color: forestgreen;
+}
