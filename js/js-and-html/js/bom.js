@@ -8,6 +8,9 @@ console.log(window.innerWidth);
 // Виводимо поточну висоту екрану
 console.log(window.innerHeight);
 
+// Відкриваємо нову вкладу або спливаюче вікно
+window.open('https://github.com/dimaa2');
+
 // Вспливаюче вікно
 // window.open('https://github.com/dimaa21');
 
@@ -16,3 +19,11 @@ console.log(window.innerHeight);
 
 // navigator — надає інформацію про браузер і операційну систему
 console.log(navigator.platform);
+
+// location — дозволяє працювати з URL-адресою сторінки
+// console.log(location.href);
+
+// location.reload() — перезавантажує сторінку
+// setTimeout(function() {
+//    location.reload();
+// }, 2000);
