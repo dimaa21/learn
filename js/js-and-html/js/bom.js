@@ -9,7 +9,7 @@ console.log(window.innerWidth);
 console.log(window.innerHeight);
 
 // Відкриваємо нову вкладу або спливаюче вікно
-window.open('https://github.com/dimaa2');
+// window.open('https://github.com/dimaa21');
 
 // Вспливаюче вікно
 // window.open('https://github.com/dimaa21');
@@ -27,3 +27,17 @@ console.log(navigator.platform);
 // setTimeout(function() {
 //    location.reload();
 // }, 2000);
+
+// Змінити текст у заголовку
+function changeHeadingText() {
+    document.querySelector('h1').textContent = 'Заголовок змінено!';
+}
+
+// Виділити всі параграфи червоним кольором
+function highlightParagraphs() {
+    const paragraphs = document.querySelectorAll('p');
+    paragraphs.forEach(paragraph => {
+        paragraph.style.color = 'red';
+    });
+}
+
