@@ -1,10 +1,10 @@
 var number = 20;
 
 // Оператор IF / ELSE IF / ELSE
-if(number == 14) {
+if(number == 10) {
     console.log('Числа більше за 5');
-} else if(number > 10) {   // ✅ умова в дужках
-    console.log('Числа більше за 10');
+} else if(number == 17) {   // ✅ умова в дужках
+    console.log('Число дорівнює 17');
 } else {
-    console.log('Число більше за 15');
+    console.log('Число менше за 17');
 }
