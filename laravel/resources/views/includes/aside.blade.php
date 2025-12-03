@@ -1,6 +1,8 @@
-<div class="wrapper">
-    <div class="aside container">
-        <h2>Бокова панель</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores sed dignissimos fugiat temporibus exercitationem laborum! Laboriosam sed nostrum dolorem delectus, voluptate ratione molestias ad rerum nobis dolorum aliquam dolor!</p>
-    </div>
+<div class="aside">
+    <h2>Про компанію</h2>
+    <p>
+        Наша компанія спеціалізується на створенні сучасних, швидких та адаптивних веб-рішень.
+        Ми допомагаємо бізнесам отримати професійні сайти, що підвищують продажі та покращують взаємодію з клієнтами.
+        Працюємо з увагою до деталей, швидко реагуємо на правки та забезпечуємо якісний результат.
+    </p>
 </div>

@@ -37,43 +37,104 @@ header {
 }
 
 .hero {
+    position: relative;
+
     .hero-block {
+        position: relative;
+
         .hero-block-img {
-            width: 100%; // ширина 100%
-            max-height: 300px; // або будь-яка потрібна висота
-            object-fit: cover; // щоб зображення заповнювало блок без спотворень
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        // затемнення фото
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.45); // рівень затемнення
+            z-index: 1;
+        }
+
+        // Текст + кнопка
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+
+            .hero-title {
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+                opacity: 0.9;
+                margin-bottom: 20px;
+            }
+
+            .hero-btn {
+                padding: 12px 26px;
+                background-color: #fff;
+                color: #000;
+                border: none;
+                border-radius: 25px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    background: #000;
+                    color: #fff;
+                }
+            }
         }
     }
 }
 
-.wrapper {
+.layout {
     display: flex;
     gap: 20px; // відстань між блоками
-    flex-wrap: wrap; // щоб на маленьких екранах блоки переносились
+    margin-top: 30px;
 
     .main {
-        flex: 0 0 70%; // займає 70%
-        background-color: #f0f0f0;
-        padding: 20px;
-        box-sizing: border-box;
+        flex: 0 0 70%; // 70% ширини
     }
 
     .aside {
-        flex: 0 0 30%; // займає 30%
-        background-color: #e0e0e0;
+        flex: 0 0 30%; // 30% ширини
+    }
+
+    .main,
+    .aside {
+        background: #363636; // легкий сірий фон
+        border: 1px solid #ddd; // мінімальний бордер
+        border-radius: 8px;
         padding: 20px;
-        box-sizing: border-box;
     }
 }
 
-// Мобільна адаптивність
+/* Адаптив */
 @media (max-width: 768px) {
-    .wrapper {
+    .layout {
         flex-direction: column;
 
         .main,
         .aside {
-            flex: 1 1 100%; // обидва блоки на всю ширину
+            flex: 0 0 100%;
         }
     }
 }
+
+
