@@ -59,6 +59,7 @@ header {
             height: 100%;
             background: rgba(0, 0, 0, 0.45); // рівень затемнення
             z-index: 1;
+            border-radius: 10px;
         }
 
         // Текст + кнопка
@@ -137,4 +138,160 @@ header {
     }
 }
 
+// Сторінка про компанію
+.about-company {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px 30px;
+    background: #f5f5f7;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    margin-top: 40px;
 
+    &__content {
+        flex: 1;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #000;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #444;
+    }
+
+    &__highlight {
+        background: #ffffff;
+        border-left: 4px solid #000;
+        padding: 15px 20px;
+        margin-top: 20px;
+        border-radius: 8px;
+
+        p {
+            font-size: 17px;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+    }
+
+    &__btn {
+        margin-top: 25px;
+        padding: 12px 32px;
+        background: #000;
+        color: #fff;
+        border-radius: 30px;
+        border: 2px solid #000;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        font-weight: 600;
+
+        &:hover {
+            background: #fff;
+            color: #000;
+        }
+    }
+
+    &__image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 16px;
+            object-fit: cover;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    @media (max-width: 900px) {
+        flex-direction: column-reverse;
+        text-align: center;
+
+        &__highlight {
+            text-align: left;
+        }
+    }
+}
+
+
+// Сторінка about
+.about {
+    padding: 60px 0;
+
+    .about-container {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .about-content {
+        flex: 1 1 55%;
+        background: #fff;
+        color: #000;
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+
+        .about-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .about-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .about-highlight {
+            background: #e6f3ff;
+            border-left: 4px solid #007bff;
+            padding: 15px 20px;
+            border-radius: 8px;
+
+            h3 {
+                margin: 0 0 6px 0;
+                font-size: 20px;
+            }
+
+            p {
+                margin: 0;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .about-image {
+        flex: 1 1 40%;
+
+        img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            object-fit: cover;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .about-container {
+            flex-direction: column;
+        }
+
+        .about-content {
+            padding: 20px;
+        }
+    }
+}
