@@ -7,9 +7,21 @@
 @section('content')
     @include('includes.header')
 
-    <form action="/contact" method="POST">
-        <label for="name">Name</label>
-    </form>
+    <div class="main-container">
+        <div class="main-block">
+            <h1>Contact page</h1>
+            <form action="/contact" method="POST">
+                <label for="name">Ім'я</label>
+                <input type="text" placeholder="Введіть ім'я" name="name" id="name">
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="Введіть вашу пошту" name="email" id="email">
+
+                <label for="subject">Тема повідомлення</label>
+                <input type="text" placeholder="Введіть вашу пошту" name="subject" id="subject">
+            </form>
+        </div>
+    </div>
 
     <div class="about">
         <div class="about-container container">
